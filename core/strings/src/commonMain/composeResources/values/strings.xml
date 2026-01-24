@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2025 Meshtastic LLC
+  ~ Copyright (c) 2025 Atlas LLC
   ~
   ~ This program is free software: you can redistribute it and/or modify
   ~ it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
   -->
 
 <resources>
-    <string name="meshtastic_app_name">Meshtastic</string>
+    <string name="meshtastic_app_name">Atlas</string>
 
     <!-- Language tags native names (not available via .getDisplayLanguage) -->
     <string name="fr_HT" translatable="false">Kreyòl ayisyen</string>
@@ -27,9 +27,9 @@
     <string name="some_username" translatable="false">SKH</string>
     <string name="sample_message" translatable="false">hey I found the cache, it is over here next to the big tiger. I'm kinda scared.</string>
 
-    <string name="default_mqtt_address" translatable="false">mqtt.meshtastic.org</string>
+    <string name="default_mqtt_address" translatable="false">mqtt.atlas.org</string>
 
-    <string name="fallback_node_name">Meshtastic</string>
+    <string name="fallback_node_name">Atlas</string>
     <string name="node_filter_placeholder">Filter</string>
     <string name="desc_node_filter_clear">clear node filter</string>
     <string name="node_filter_title">Filter by</string>
