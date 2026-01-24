@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 Meshtastic LLC
+ * Copyright (c) 2025 Atlas LLC
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,10 +22,11 @@ import androidx.compose.material3.ColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-val MeshtasticGreen = Color(0xFF67EA94)
-val MeshtasticAlt = Color(0xFF2C2D3C)
-val HyperlinkBlue = Color(0xFF43C3B0)
-val AnnotationColor = Color(0xFF039BE5)
+val AtlasNeonPurple = Color(0xFF9d4edd)
+val AtlasElectricBlue = Color(0xFF00d9ff)
+val AtlasDarkBackground = Color(0xFF121212)
+val HyperlinkCyan = Color(0xFF00d9ff)
+val AnnotationColor = Color(0xFFff007f)
 
 object TracerouteColors {
     // High-contrast pair that stays legible on light/dark tiles and for most color-blind users.
