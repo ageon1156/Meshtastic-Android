@@ -49,7 +49,7 @@ class MeshNodeManagerTest {
 
         assertNotNull(result)
         assertEquals(nodeNum, result.num)
-        assertTrue(result.user.longName.startsWith("Meshtastic"))
+        assertTrue(result.user.longName.startsWith("Atlas"))
         assertEquals(DataPacket.nodeNumToDefaultId(nodeNum), result.user.id)
     }
 
@@ -68,7 +68,7 @@ class MeshNodeManagerTest {
 
         val incomingDefaultUser = user {
             id = "!12345678"
-            longName = "Meshtastic 5678"
+            longName = "Atlas 5678"
             shortName = "5678"
             hwModel = MeshProtos.HardwareModel.UNSET
         }
@@ -85,7 +85,7 @@ class MeshNodeManagerTest {
         val nodeNum = 1234
         val existingUser = user {
             id = "!12345678"
-            longName = "Meshtastic 5678"
+            longName = "Atlas 5678"
             shortName = "5678"
             hwModel = MeshProtos.HardwareModel.UNSET
         }

@@ -69,7 +69,7 @@ class RecentAddressesDataSource @Inject constructor(private val dataStore: DataS
                 }
                 is String -> {
                     // Old format: just the address string
-                    RecentAddress(address = item, name = "Meshtastic")
+                    RecentAddress(address = item, name = "Atlas")
                 }
                 else -> {
                     // Unknown format, log or handle as an error if necessary

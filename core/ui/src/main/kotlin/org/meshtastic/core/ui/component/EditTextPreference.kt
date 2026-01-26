@@ -272,7 +272,7 @@ private fun EditTextPreferencePreview() {
     Column {
         EditTextPreference(
             title = "String",
-            value = "Meshtastic",
+            value = "Atlas",
             summary = "This is a summary",
             maxSize = 39,
             enabled = true,
