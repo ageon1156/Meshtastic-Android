@@ -64,43 +64,44 @@ dependencyResolutionManagement {
     }
 }
 
-plugins {
-    id("org.gradle.toolchains.foojay-resolver") version "1.0.0"
-    id("com.gradle.develocity") version("4.3.1")
-    id("com.gradle.common-custom-user-data-gradle-plugin") version "2.4.0"
-}
+// Commented out enterprise plugins that are not available in standard repositories
+// plugins {
+//     id("com.gradle.develocity") version("4.3.1")
+//     id("com.gradle.common-custom-user-data-gradle-plugin") version "2.4.0"
+// }
 
-develocity {
-    buildScan {
-        capture {
-            fileFingerprints.set(true)
-        }
-        publishing.onlyIf { false }
-    }
-    buildCache {
-        local {
-            isEnabled = true
-        }
-//        remote(HttpBuildCache::class.java) {
-//            isAllowInsecureProtocol = true
-//            // Replace with your selfhosted instance address
-//            // see: https://docs.gradle.org/current/userguide/build_cache.html#sec:build_cache_setup_http_backend
-//            url = uri("http://<your-build-cache-ip-here>:5071/cache/")
-//
-//            // Allow this machine to upload results to the cache
-//            isPush = true
-//
-//        }
-    }
-}
+// develocity {
+//     buildScan {
+//         capture {
+//             fileFingerprints.set(true)
+//         }
+//         publishing.onlyIf { false }
+//     }
+//     buildCache {
+//         local {
+//             isEnabled = true
+//         }
+// //        remote(HttpBuildCache::class.java) {
+// //            isAllowInsecureProtocol = true
+// //            // Replace with your selfhosted instance address
+// //            // see: https://docs.gradle.org/current/userguide/build_cache.html#sec:build_cache_setup_http_backend
+// //            url = uri("http://<your-build-cache-ip-here>:5071/cache/")
+// //
+// //            // Allow this machine to upload results to the cache
+// //            isPush = true
+// //
+// //        }
+//     }
+// }
 
-@Suppress("UnstableApiUsage")
-toolchainManagement {
-    jvm {
-        javaRepositories {
-            repository("foojay") {
-                resolverClass.set(org.gradle.toolchains.foojay.FoojayToolchainResolver::class.java)
-            }
-        }
-    }
-}
+// Commented out as foojay-resolver plugin is not available
+// @Suppress("UnstableApiUsage")
+// toolchainManagement {
+//     jvm {
+//         javaRepositories {
+//             repository("foojay") {
+//                 resolverClass.set(org.gradle.toolchains.foojay.FoojayToolchainResolver::class.java)
+//             }
+//         }
+//     }
+// }
